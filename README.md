@@ -1,5 +1,10 @@
-####                                                              Hi 👋, I'm Lautaro Rivadero 
 
+
+#  Hi 👋, I'm Lautaro Rivadero 
+
+
+
+<lautaro.mra.2002@gmail.com>
 <!--
 **LautaroMRA02/LautaroMRA02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
