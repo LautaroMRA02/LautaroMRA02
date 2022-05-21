@@ -1,8 +1,7 @@
-import { Compo }  from "./Compo.js";
 import { ScreenHome }  from "./components/Screens/ScreenHome.js";
 import { parseRequestUrl } from "./utils.js";
 
-window.location.hash = '#'
+window.location.hash = '/#'
 const routes = {
     "/": ScreenHome,
     "/home": Compo,
