@@ -1,12 +1,45 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body
 {
     height: 100vh;
-    width: 100%;
+    color: white;
 }
 
 .card{
     background-color: rgb(1, 0, 25);
+}
+#root{
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+.present
+{
+    display: grid;
+    grid-template-areas:"doble resumen";
+    grid-template-rows:1fr ;
+    grid-template-columns: 70% 30%;
+    gap: 4px;
+    height: 100%;
+    width: 100%;
+
+}
+.card_1
+{
+    grid-area: doble;
+    display: flex;
+    flex-flow: nowrap column;
+    overflow-y: scroll;
+    gap: 4px;
+}
+.card_1 > div {
+    min-height: 100%;
+}
+.card_2
+{
+    grid-area: resumen;
 }
