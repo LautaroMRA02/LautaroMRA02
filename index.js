@@ -16,7 +16,6 @@ async function actionFakeServer(){
     if(screen.after_render) await screen.after_render();
 }
 
-const p = document.getElementsByClassName('card_1')
 
 window.addEventListener('load',actionFakeServer)
 window.addEventListener('hashchange', actionFakeServer);

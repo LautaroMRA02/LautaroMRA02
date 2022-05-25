@@ -14,22 +14,21 @@ body
     color: white;
     font-family: 'Akshar';
     animation: avatarAni 2s;
-
+    overflow: auto;
 }
 
 .card{
     background-color: rgb(1, 0, 25);
     padding: 30px;
-
+    display: block;
 }
 p{
 
 }
 #root
 {
-    height: 100%;
-    overflow: hidden;
     padding: 10px;
+    height: 100%;
 }
 .present
 {
@@ -37,7 +36,7 @@ p{
     grid-template-areas:"doble resumen";
     grid-template-rows:1fr ;
     grid-template-columns: 70% 30%;
-    gap: 4px;
+    gap: 8px;
     height: 100%;
     width: 100%;
 
@@ -57,6 +56,9 @@ p{
 .card_2
 {
     grid-area: resumen;
+}
+.card_3{
+    display: none;
 }
 .card_avatar
 {
@@ -112,4 +114,41 @@ p{
     font-size: 4em;
     line-height: .8em;
     user-select: none;
+}
+svg {
+    max-height: 50px;
+}
+.card_3_flex{
+    display: block;
+}
+.card_3_grid{    
+    display: none;
+
+}
+@media (max-width: 780px) {
+    .card_3_flex{
+        display: none;
+    }
+    .card_3_grid{
+        display: block;
+
+        grid-area: proyects;
+    }
+    .present
+    {
+    display: grid;
+    grid-template-areas:"resumen"
+                        "doble"
+                        "proyects";
+    grid-template-rows: 98vh auto  ;
+    grid-template-columns: 100%;
+    gap: 4px;
+    }
+    .card_1
+    {
+        grid-area: doble;
+        display: flex;
+        flex-flow: nowrap column;
+        overflow-y: unset;
+    }
 }
