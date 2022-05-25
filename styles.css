@@ -107,3 +107,9 @@ p{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.profe{
+    font-family: 'Koulen', cursive;
+    font-size: 4em;
+    line-height: .8em;
+    user-select: none;
+}

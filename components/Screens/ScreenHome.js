@@ -2,13 +2,18 @@
 
 export const ScreenHome = {
     render: () => {
+      
         return `
             <main class="present">
-                <section class=" card_1">
+                <section class="card_1" id="card_1">
                     <div class="card ">
+                        <h1 class="profe">Web developer</h1>
+
                         <img class=""  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lautaromra02&layout=compact" />
                     </div>
-                    <div class="card ">22</div>
+                    <div class="card ">
+                        <h2>Proyectos</h2>
+                    </div>
                 </section>
 
                 <section class="card card_2">
@@ -33,6 +38,9 @@ export const ScreenHome = {
             </main>
         `
     },
+    after_render: ()=> {
+       
+    }
 }
 
 export default ScreenHome;
