@@ -1,6 +1,24 @@
 
 const proyects = {
     render: (view)=>{
+
+        
+            // let xhr = new XMLHttpRequest();
+
+            // xhr.open('GET', "https://raw.githubusercontent.com/LautaroMRA02/Full_ECommerce/master/frontend/src/index.js", false);
+
+            // try {
+            // xhr.send();
+            // if (xhr.status != 200) {
+            //     console.log(`Error ${xhr.status}: ${xhr.statusText}`);
+            // } else {
+            //     console.log(xhr.response);
+            // }
+            // } catch(err) { // instead of onerror
+            //     console.log("Request failed");
+            // }
+
+
         return ` 
         <div class="card ${view}">
             
@@ -20,7 +38,7 @@ export const ScreenHome = {
                         <h1 class="profe">Web developer</h1>
 
                         <img class=""  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lautaromra02&layout=compact" />
-                    </div>card_3_grid
+                    </div>
                     ${proyects.render("card_3_flex")}
                 </section>
 
@@ -39,8 +57,9 @@ export const ScreenHome = {
                         Actualmente, me encuentro en la búsqueda de mi primer empleo.
                         </p>
                         <h2>Objetivos</h2>
-                        <p>aksfas;f aksfas;faksfas;faksfas;faksfas;f vaksfas;faksfas;fvaksfas;f</p>   
-                        <p>aksfas;f aksfas;faksfas;faksfas;faksfas;f vaksfas;faksfas;fvaksfas;f</p>   
+                        <p>Actualmente, me encuentro en la búsqueda de mi primer empleo, quiero
+                        consolidar un perfil frontend y a futuro construir un perfil full stack.
+                        </p>   
                     </article>
                     <h2>Contacto</h2>
                     <div><button>wp</button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"/></svg></div>
