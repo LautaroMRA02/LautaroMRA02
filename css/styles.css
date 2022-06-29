@@ -148,30 +148,37 @@ svg {
 .contacto_wp{
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* overflow: hidden; */
+    /* justify-content: center; */
 }
-.contacto_wp > button
+.contacto_wp 
 {
     background-color: greenyellow;
-    width: 90%;
-    padding: 10px 5px;
-    border-radius: 4px 0 0 4px;
-    border: none;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 5px;
 }
-.copy_wp > svg {
+/*
+
+ */
+ .contacto_wp  > p {
+    font-weight: bold;
+    color: rgb(0, 44, 94);
+}
+ .contacto_wp  > svg {
     height: 24px;
     fill: rgb(0, 44, 94);
-
 }
 
-.copy_wp
-{
-    width: 10%;
-    background-color: white;
-    padding: 10px 5px;
-    border-radius:0 4px 4px 0;
-    text-align: center;
-}
+/* .copy_wp > svg {
+} */
+
+
 .social_icons
 {
     width: 100%;
@@ -180,8 +187,12 @@ svg {
     justify-content: space-between;
 }
 .social_icons > svg {
-    filter: invert();
+    fill: white;
 }
+
+
+
+
 .section_informacion >div{ 
     height: 100%;
     scroll-snap-align: start;
@@ -232,9 +243,6 @@ svg {
   
 
 
-    .copy_wp > svg {
-        height: 16px;
-    }
 }
 
 @media (max-width: 360px){
