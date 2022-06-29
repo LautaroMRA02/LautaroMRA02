@@ -22,7 +22,7 @@ export const ScreenHome = {
 
 
                 <section class="section_informacion">
-                    <div  class="  style_card">
+                    <div  class="style_card">
                         <h1 class="profe">Web developer</h1>
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lautaromra02&layout=compact" />
                     </div>
