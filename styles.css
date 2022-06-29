@@ -41,6 +41,15 @@ p{
     width: 100%;
 
 }
+.card_1 
+{
+    scroll-snap-type: y mandatory;
+}
+.test
+{
+    scroll-snap-align: start;
+}
+
 .card_1
 {
     grid-area: doble;
@@ -65,6 +74,7 @@ p{
     border-radius: 50%;
     object-fit: cover;
     height: 200px;
+    width: 200px;
     border: yellow 1px solid;
     display: block;
     margin: 0 auto;
@@ -125,13 +135,17 @@ svg {
     display: none;
 
 }
+
+
+
+
 @media (max-width: 780px) {
     .card_3_flex{
         display: none;
     }
     .card_3_grid{
         display: block;
-
+        height: 100vh;
         grid-area: proyects;
     }
     .present
@@ -143,6 +157,8 @@ svg {
     grid-template-rows: 98vh auto  ;
     grid-template-columns: 100%;
     gap: 4px;
+    scroll-snap-type: y mandatory;
+
     }
     .card_1
     {
@@ -150,5 +166,7 @@ svg {
         display: flex;
         flex-flow: nowrap column;
         overflow-y: unset;
+        height: 100vh;
+
     }
 }

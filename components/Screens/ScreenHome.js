@@ -20,7 +20,7 @@ const proyects = {
 
 
         return ` 
-        <div class="card ${view}">
+        <div class="card ${view} test">
             
             <h2>Proyectos</h2>
             <nav>
@@ -33,8 +33,8 @@ export const ScreenHome = {
     render: () => {
         return `
             <main class="present">
-                <section class="card_1" id="card_1">
-                    <div class="card ">
+                <section class="card_1 test" id="card_1">
+                    <div class="card test">
                         <h1 class="profe">Web developer</h1>
 
                         <img class=""  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lautaromra02&layout=compact" />
@@ -42,7 +42,7 @@ export const ScreenHome = {
                     ${proyects.render("card_3_flex")}
                 </section>
 
-                <section class="card card_2">
+                <section class="card card_2 test">
                     <img  class="card_avatar" src="https://avatars.githubusercontent.com/u/79938359?v=4"/>
                     <div>
                     <p class="name">Lautaro Rivadero </p>
