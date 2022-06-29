@@ -131,7 +131,8 @@ svg {
     grid-template-areas:"info present";
     grid-template-columns: 70% 1fr;
     grid-template-rows: max-height(100vh);
-    max-height: 100%;
+    max-height: 100vh;
+    height: 100vh;
     padding: 10px;
 }
 
@@ -191,8 +192,6 @@ svg {
     .section_informacion
     {
         scroll-snap-type: none;
-        /* overflow-y: scroll; */
-
     }
     .section_proyectos-mobile{
         display: block;
