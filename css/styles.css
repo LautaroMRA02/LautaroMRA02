@@ -2,19 +2,11 @@
 /* font-family: 'Koulen', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400&display=swap');
 /* font-family: 'Akshar', sans-serif; */
-
-/* 
-
-.card_1 
-{
-    scroll-snap-type: y mandatory;
+:root{
+    --card-back: ;
+    --whatsapp: ;
+    --whatsapp-hover: ;
 }
-/* scroll-snap-type: y mandatory; */
-
-/* .test
-{
-    scroll-snap-align: start;
-} */
 
 *{
     box-sizing: border-box;
@@ -31,6 +23,18 @@ body
     color: white;
 }
 
+/* WEB LAYOUT */
+/* WEB LAYOUT */
+/* WEB LAYOUT */
+.present{
+   display: grid;
+   grid-template-areas:"info present";
+   grid-template-columns: 70% 1fr;
+   grid-template-rows: max-height(100vh);
+   max-height: 100vh;
+   height: 100vh;
+   padding: 10px;
+}
 .card_avatar
 {
     border-radius: 50%;
@@ -92,7 +96,6 @@ svg {
     max-height: 50px;
 }
 
-
 .section_informacion
 {
     scroll-snap-type: y mandatory;
@@ -127,24 +130,23 @@ svg {
 .section_presentacion
 {
     grid-area: present;
-}
- /* WEB LAYOUT */
- /* WEB LAYOUT */
- /* WEB LAYOUT */
-.present{
-    display: grid;
-    grid-template-areas:"info present";
-    grid-template-columns: 70% 1fr;
-    grid-template-rows: max-height(100vh);
-    max-height: 100vh;
-    height: 100vh;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 
 /* CONTACTO STYLES */
 /* CONTACTO STYLES */
 /* CONTACTO STYLES */
+.caja_socials
+{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+}
 .contacto_wp{
     width: 100%;
     display: flex;
@@ -162,6 +164,15 @@ svg {
     justify-content: center;
     gap: 4px;
     padding: 5px;
+    user-select: none;
+}
+.contacto_wp:hover {
+    background-color: rgb(128, 190, 35);
+    cursor: pointer;
+}
+.contacto_wp:active {
+    background-color: greenyellow;
+    transform: scale(1.005);
 }
 /*
 
