@@ -21,13 +21,14 @@
     margin: 0;
     padding: 0;
 }
+
 body
 {
     box-sizing: border-box;
-
     height: 100vh;
     font-family: 'Akshar';
     width: 100%;
+    color: white;
 }
 
 .card_avatar
@@ -58,6 +59,11 @@ body
     text-align: center;
     color: gray;
 }
+
+
+/* SCROLL SCROLL SCROLL */
+/* SCROLL SCROLL SCROLL */
+/* SCROLL SCROLL SCROLL */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -71,22 +77,21 @@ body
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+/* ----------------------- */
+/* ----------------------- */
+/* ----------------------- */
+
 .profe{
     font-family: 'Koulen', cursive;
     font-size: 4em;
     line-height: .8em;
     user-select: none;
 }
+
 svg {
     max-height: 50px;
 }
-.card_3_flex{
-    display: block;
-}
-.card_3_grid{    
-    display: none;
 
-}
 
 .section_informacion
 {
@@ -148,12 +153,15 @@ svg {
 .contacto_wp > button
 {
     background-color: greenyellow;
-    width: 80%;
+    width: 90%;
     padding: 10px 5px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 4px 0 0 4px;
+    border: none;
 }
 .copy_wp > svg {
     height: 24px;
+    fill: rgb(0, 44, 94);
+
 }
 
 .copy_wp
@@ -161,10 +169,19 @@ svg {
     width: 10%;
     background-color: white;
     padding: 10px 5px;
-    border-radius:0 10px  10px 0;
+    border-radius:0 4px 4px 0;
     text-align: center;
 }
-
+.social_icons
+{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+.social_icons > svg {
+    filter: invert();
+}
 .section_informacion >div{ 
     height: 100%;
     scroll-snap-align: start;
@@ -198,6 +215,8 @@ svg {
     }
     .section_proyectos-web{
         display: none;
+        width: 0;
+        height: 0;
     }  
     .section_informacion{
         overflow: hidden;
