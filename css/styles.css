@@ -209,6 +209,20 @@ svg {
     scroll-snap-align: start;
 }
 
+.main_search{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    gap: 8px;
+}
+#search_proyectos{
+    background-color: transparent;
+    color :white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
 
 @media (max-width: 780px) {
     body{
@@ -252,7 +266,7 @@ svg {
         scroll-snap-align: start;
     }
   
-
+ 
 
 }
 

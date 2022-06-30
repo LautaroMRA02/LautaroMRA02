@@ -14,6 +14,9 @@
             // } catch(err) { // instead of onerror
             //     console.log("Request failed");
             // }
+import {REPOSITORIOS} from '../../repositorios.js'
+
+
 
 export const ScreenHome = {
     render: () => {
@@ -28,11 +31,17 @@ export const ScreenHome = {
                     </div>
 
                     <div class="section_proyectos section_proyectos-web style_card">
-                        <div>
+                        <section class="main_search">
                             <h2>Proyectos</h2>
-                            <input type="text"/>
-                        </div>
-                        <p>WEB</p>
+                            <input type="text" id="search_proyectos" name="search" alt="search_proyectos" autocomplete="off"/>
+                            <select>
+                            <option>1</option>
+                            </select>
+                        </section>
+
+                        <section class="cards_proyectos" id="cards_proyectos-web">
+
+                        </section>
                     </div>
                 </section>
 
@@ -70,13 +79,13 @@ export const ScreenHome = {
                     </article>
                     <article class="caja_socials">
                         <h2>Contacto</h2>
-                        <div class="contacto_wp">
+                        <a href="https://api.WhatsApp.com/send?phone=+543549509935" class="contacto_wp">
                             <p>Whatsapp</p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                             <div class="copy_wp">
                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"/></svg>
                             </div>
-                        </div>
+                        </a>
                         <div class="social_icons">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
@@ -95,11 +104,18 @@ export const ScreenHome = {
 
 
                 <section class="section_proyectos section_proyectos-mobile style_card">
-                    <div>
+                    <div class="main_search">
                         <h2>Proyectos</h2>
-                        <input type="text"/>
+                        <input type="text" id="search_proyectos" name="search" alt="search_proyectos" autocomplete="off"/>
+                        <select>
+                            <option></option>
+                        </select>
                     </div>
+
                     <p>MOBILE</p>
+                    <section class="cards_proyectos" id="cards_proyectos-mobile">
+
+                    </section>
                 </section>
 
 
@@ -109,6 +125,20 @@ export const ScreenHome = {
     },
     after_render: ()=> {
        
+
+
+        const list_proyects_web =  document.getElementById('cards_proyectos-web')
+        const list_proyects_mobile =  document.getElementById('cards_proyectos-mobile')
+        const cards = REPOSITORIOS.map(item => {
+            return `<a href="${item.url}" class="proyecto_card" target="_blank" >
+                        <img src="https://via.placeholder.com/150">
+                        <p>${item.url}</p>
+                    </a>`
+        })
+        cards.forEach(element => {
+            list_proyects_web.innerHTML+=element
+            list_proyects_mobile.innerHTML+=element
+        })
     }
 }
 
