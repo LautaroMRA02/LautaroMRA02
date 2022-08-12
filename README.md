@@ -51,6 +51,7 @@ Here are some ideas to get you started:
       <h5>Software I Use</h5>
       <h6>🥞&emsp;<a href="#">Visual Studio Code</a>&emsp;</h6>
       <h6>🧀&emsp;<a href="#">Postman<a>&emsp;</h6>
+      <h6>🐋&emsp;<a href="#">Docker<a>&emsp;</h6>
       </td>
   </tr>
 </table>
