@@ -34,6 +34,8 @@ Here are some ideas to get you started:
               <h5>Frameworks/Tools</h5>
           <h6>📦&emsp;<a href="#">Node Js</a>&emsp;</h6>
           <h6>⚛&emsp;<a href="#">React</a>&emsp;</h6>
+          <h6>🦎&emsp;<a href="#">Django</a>&emsp;</h6>
+          <h6>⛎&emsp;<a href="#">Chakra UI</a>&emsp;</h6>
           </td>
       <td valign="top">
       <h5>Database</h5>
